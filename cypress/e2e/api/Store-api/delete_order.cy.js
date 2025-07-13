@@ -1,10 +1,14 @@
+import * as allure from 'allure-js-commons';
 
 describe('DELETE /store/order/{orderId}', () => {
   it('should create an order, attempt to delete it, and verify its state', () => {
-    cy.allure().severity('critical');
-    cy.allure().feature('Store');
-    cy.allure().story('Create & Delete Order');
+    beforeEach(()=>{
+    allure.epic('PetStore API Testleri');
+    allure.feature('Store API Testleri');
+    allure.story('Sipariş Oluşturma ve Silme Doğrulaması');
+    allure.severity('critical');
 
+  });
     const newOrder = {
       petId: 1,
       quantity: 1,
@@ -24,19 +28,15 @@ describe('DELETE /store/order/{orderId}', () => {
       orderId = postRes.body.id;
       cy.log(`Created Order with ID: ${orderId}`);
 
-      // Step 2: Attempt to DELETE the order
-      // We are relaxing the status code expectation for DELETE to accommodate API quirks
+      
       cy.request({
         method: 'DELETE',
         url: `https://petstore.swagger.io/v2/store/order/${orderId}`,
         headers: { 'api_key': 'special-key' },
-        failOnStatusCode: false // Do not fail test on non-2xx status codes
+        failOnStatusCode: false 
       }).then(delRes => {
         cy.log(`DELETE response status: ${delRes.status}`);
-        // For a public, potentially flaky API, accept 200 (successful deletion)
-        // or 404 (if the item is somehow already gone or not found for deletion)
-        // or even 500 if the server has issues.
-        // The key is to verify the state *after* this call.
+        
         expect([200, 404, 500]).to.include(delRes.status, 'Expected DELETE to return 200, 404, or 500');
 
         cy.wait(500);

@@ -1,5 +1,13 @@
+import * as allure from 'allure-js-commons';
 
 describe('POST /pet/{petId}/uploadImage - Upload Pet Image', () => {
+  beforeEach(()=>{
+  allure.epic('PetStore API Testleri');
+  allure.feature('Pet API Testleri');
+  allure.story('Pet Görseli Yükleme ve Doğrulama');
+  allure.severity('normal');
+  allure.description('Bu test senaryosu, PetStore API kullanarak önce yeni bir evcil hayvan oluşturur, ardından bu hayvana bir görsel yükler ve yükleme işleminin başarılı olduğunu doğrular.');
+})
   let petId;
 
   before(() => {

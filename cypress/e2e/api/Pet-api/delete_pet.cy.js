@@ -1,6 +1,15 @@
+import * as allure from 'allure-js-commons';
 
 describe('DELETE /pet/{petId} - Create & Delete Pet', () => {
+
+  beforeEach(()=>{
+  allure.epic('PetStore API Testleri');
+  allure.feature('Pet API Testleri');
+  allure.story('Pet Oluşturma ve Silme Doğrulaması');
+  allure.severity('critical');
+})
   it('should create a pet, delete it, and verify deletion state ', () => {
+
     const petPayload = {
       id: Number(Date.now().toString().slice(-6)), 
       name: 'Bobby Happy',

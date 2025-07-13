@@ -1,4 +1,14 @@
+import * as allure from 'allure-js-commons';
+
+
+
 describe('GET /store/inventory - Inventory by Status', () => {
+  beforeEach(()=>{
+  allure.epic('PetStore API Testleri');
+  allure.feature('Store API Testleri');
+  allure.story('Sipariş Oluşturma ve Silme Doğrulaması');
+  allure.severity('critical');
+});
     it('should return inventory stats grouped by status', () => {
       cy.request({
         method: 'GET',

@@ -1,4 +1,14 @@
+
+import * as allure from 'allure-js-commons';
+
 describe('GET /pet/findByStatus - Find Available Pets', () => {
+  beforeEach(()=>{
+  allure.epic('PetStore API Testleri');
+  allure.feature('Pet API Testleri');
+  allure.story('Statüye Göre Evcil Hayvanları Bulma');
+  allure.severity('normal');
+  allure.tag('API', 'GET', 'Filter', 'PetSearch');
+});
     it('should return a list of available pets', () => {
       cy.request({
         method: 'GET',

@@ -1,5 +1,15 @@
 
+import * as allure from 'allure-js-commons';
+
+
 describe('Store API – Create & Get Order By ID', () => {
+  beforeEach(()=>{
+  allure.epic('PetStore API Testleri');
+  allure.feature('Store API Testleri');
+  allure.story('Sipariş Oluşturma ve Silme Doğrulaması');
+  allure.severity('critical');
+  allure.description('Bu test senaryosu, PetStore API kullanarak önce yeni bir sipariş oluşturur, ardından bu siparişi siler ve silme işleminin başarılı olup olmadığını GET isteği ile doğrular.');
+});
   it('POST ile order yaratıp, GET ile aynı ID’yi doğrular', () => {
     const orderId = Number(Date.now().toString().slice(-6));
 

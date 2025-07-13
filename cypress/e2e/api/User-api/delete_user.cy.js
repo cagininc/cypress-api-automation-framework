@@ -1,4 +1,13 @@
+import * as allure from 'allure-js-commons';
+
 describe('DELETE /user/{username} - Create & Delete User with retry GET', () => {
+  beforeEach(()=>{
+  allure.epic('PetStore API Testleri');
+  allure.feature('Store API Testleri');
+  allure.story('Sipariş Oluşturma ve Silme Doğrulaması');
+  allure.severity('critical');
+  allure.description('Bu test senaryosu, PetStore API kullanarak önce yeni bir sipariş oluşturur, ardından bu siparişi siler ve silme işleminin başarılı olup olmadığını GET isteği ile doğrular.');
+});
   const userId = Date.now();
   const username = `cagin_user_${userId}`;
   const userPayload = {

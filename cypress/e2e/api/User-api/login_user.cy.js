@@ -1,7 +1,15 @@
-describe('GET /user/login', () => {
+import * as allure from 'allure-js-commons';
 
+describe('GET /user/login', () => {
+beforeEach(()=>{ allure.epic('PetStore API Testleri');
+  allure.feature('User API Testleri');
+  allure.story('Kullanıcı girisi dogrulaması');
+  allure.severity('blocker');
+  allure.description('Bu test senaryosu, PetStore API kullanarak yeni bir kullanıcı oluşturur ve ardından bu kullanıcının kimlik bilgileriyle başarılı bir şekilde giriş yapabildiğini doğrular.');
+});
         let username 
         before(()=>{
+         
             const userPayload = {
                 id: Date.now(),
                 username: `cagin ${Date.now()}`,

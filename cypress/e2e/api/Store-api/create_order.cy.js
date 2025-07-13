@@ -1,4 +1,13 @@
+import * as allure from 'allure-js-commons';
+
 describe('POST /store/order - Place Order', () => {
+  beforeEach(()=>{
+  allure.epic('PetStore API Testleri');
+  allure.feature('Store API Testleri');
+  allure.story('Yeni Sipariş Oluşturma');
+  allure.severity('blocker');
+  allure.description('Bu test senaryosu, PetStore API kullanarak yeni bir sipariş oluşturur ve siparişin başarılı bir şekilde yerleştirildiğini doğrular.');
+})
     const order = {
       id: 1001,
       petId: 987654321,
