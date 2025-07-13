@@ -34,12 +34,7 @@ Bu proje, TechCareer Otomasyon Süreçleri Bootcamp'i kapsamında, Swagger PetSt
 - `DELETE /store/order/{orderId}` : Sipariş silme
 - `GET /store/inventory` : Envanter durumu sorgulama
 
-## Allure Ekran Görüntüleri
 
-![Allure Screenshot 1](./screenshots/allure-1.png)
-![Allure Screenshot 2](./screenshots/allure-2.png)
-
----
 
 # TechCareer Automation Processes Bootcamp
 
