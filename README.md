@@ -70,7 +70,9 @@ This project is part of the TechCareer Automation Processes Bootcamp. It contain
 - `GET /store/inventory` : Get inventory by status
 
 ## Allure Screenshots
-- ![Allure Screenshot 1](./Allure-report1.png)
-- ![Allure Screenshot 2](./Allure-report2.png)
+![Allure Screenshot 1](./Allure-report1.png)
+
+![Allure Screenshot 2](./Allure-report2.png)
+
 
 ```
