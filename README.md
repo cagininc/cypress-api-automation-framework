@@ -4,21 +4,20 @@ This project contains automated tests for the core endpoints of the Swagger PetS
 
 ## 🌟 Features
 
-* **Comprehensive API Testing**: Includes test scenarios for Pet, User, and Store API sections.
+* ** API Testing**: Includes test scenarios for Pet, User, and Store API sections.
 * **CRUD Operations Validation**: Verifies the creation, reading, updating, and deletion functionalities for pets and users.
-* **Detailed Reporting**: Integration with Allure Report provides rich, interactive, and granular test reports, including step-by-step execution and attachments.
-* **Easy Setup & Execution**: Clear instructions for quick project setup and test execution.
+* **Detailed Reporting**: Integration with Allure Report provides  interactive, and granular test reports.
 * **Dynamic Test Data**: Utilizes unique usernames and IDs to minimize test data conflicts and ensure test isolation.
-* **CI/CD Ready**: Designed for integration into Continuous Integration/Continuous Delivery pipelines (e.g., Jenkins, GitHub Actions) for automated test execution.
+* **CI/CD Ready**: Designed for integration into Continuous Integration/Continuous Delivery pipelines (e.g., Jenkins, GitHub Actions) for automated test execution.(Planned)
 
 ## 🛠️ Technologies Used
 
-* **Cypress**: A powerful, fast, and reliable end-to-end testing framework for web applications and APIs.
-* **Allure Report**: A flexible lightweight test reporting tool that creates clear and interactive reports.
-* **Node.js**: JavaScript runtime environment (required for Cypress and Allure CLI).
-* **npm : Package managers.
-* **Git / GitHub**: Version control system and hosting for the project repository.
-* **Jenkins (Planned)**: For future CI/CD pipeline integration.
+* **Cypress**
+* **Allure Report**
+* **Node.js**
+* **npm 
+* **Git / GitHub**
+* **Jenkins (Planned)**
 
 ## 🚀 Setup & Installation
 
