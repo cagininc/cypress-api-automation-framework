@@ -76,6 +76,6 @@ This project is part of the TechCareer Automation Processes Bootcamp. It contain
 
 ## Allure Screenshots
 
-![Allure Screenshot 1](./screenshots/allure-1.png)
-![Allure Screenshot 2](./screenshots/allure-2.png)
+![Allure Screenshot 1](./Allure -report1.png)
+![Allure Screenshot 2](./Allure -report2.png)
 ```
