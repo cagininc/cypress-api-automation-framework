@@ -1,14 +1,14 @@
 ```markdown
 # TechCareer Otomasyon Süreçleri Bootcamp'i
 
-Bu proje, TechCareer Otomasyon Süreçleri Bootcamp'i kapsamında, Swagger PetStore API'sindeki temel uç noktalar için makul ölçekte Cypress ve Allure raporlama entegrasyonu ile testler içerir. Amacım; CV’me ekleyebileceğim, GitHub’da sergileyebileceğim bir bootcamp projesi sunmak. Jenkins kurulumu ve CI/CD entegrasyonunu ileride deneyeceğim ancak şimdilik "kuruldu" diye fazla abartmıyorum.
+Bu proje, TechCareer Otomasyon Süreçleri Bootcamp'i kapsamında, Swagger PetStore API'sindeki temel uç noktalar için  Cypress ve Allure raporlama entegrasyonu ile testler içerir. 
 
 ---
 
 ## 🚀 Özellikler
 
 - **Bootcamp Seviyesinde API Testleri**: Pet, User ve Store uç noktaları için temel CRUD ve senaryo doğrulama.
-- **CV ve Portfolyo Odaklı**: İleride GitHub ve Jenkins ile CI/CD deneyimi planlıyorum.
+- ** Jenkins ile CI/CD deneyimi planlıyorum.
 
 ## API Uç Noktaları
 
@@ -43,12 +43,12 @@ Bu proje, TechCareer Otomasyon Süreçleri Bootcamp'i kapsamında, Swagger PetSt
 
 # TechCareer Automation Processes Bootcamp
 
-This project is part of the TechCareer Automation Processes Bootcamp. It contains modest-scale Cypress tests with Allure reporting for Swagger PetStore API endpoints. The goal is to showcase a bootcamp project on my CV and GitHub. Jenkins and CI/CD integration will be explored later; for now, I’m keeping expectations reasonable.
+This project is part of the TechCareer Automation Processes Bootcamp. It contains  Cypress tests with Allure reporting for Swagger PetStore API endpoints. 
 
 ## 🚀 Features
 
-- **Bootcamp-Level API Tests**: Basic CRUD scenarios for Pet, User, and Store endpoints.
-- **CV & Portfolio Focused**: Planning future GitHub showcase and Jenkins CI/CD setup.
+- Basic CRUD scenarios for Pet, User, and Store endpoints.
+- ** Jenkins CI/CD setup.
 
 ## API Endpoints
 
