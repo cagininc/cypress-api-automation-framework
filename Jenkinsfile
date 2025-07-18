@@ -1,24 +1,34 @@
-node {
-  stage('Checkout') {
-    echo '📥 Checking out code...'
-    checkout scm
-  }
+pipeline {
+    agent any
 
-  stage('Install Dependencies') {
-    echo '📦 Installing dependencies...'
-    sh 'npm ci'
-    echo '🛠️ Installing Cypress...'
-    sh 'npx cypress install'
-  }
+    tools {
+        nodejs "NodeJS 20"
+    }
 
-  stage('Run Cypress Tests') {
-    echo '🧪 Running Cypress tests...'
-    sh 'npx cypress run'
-  }
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/cagininc/cypress-api-automation-framework.git', branch: 'main'
+            }
+        }
 
-  stage('Archive Results') {
-    echo '📂 Archiving results...'
-    junit 'cypress/results/*.xml'
-    archiveArtifacts artifacts: 'cypress/screenshots/**/*.png', fingerprint: true
-  }
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm ci'
+            }
+        }
+
+        stage('Run Cypress Tests') {
+            steps {
+                sh 'npx cypress run'
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'cypress/videos/**', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'cypress/screenshots/**', allowEmptyArchive: true
+        }
+    }
 }
